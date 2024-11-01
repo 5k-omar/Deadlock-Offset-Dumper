@@ -6,7 +6,7 @@
 
 **My Discord Server**: [Join Here](https://discord.gg/tcnksFMCR9)
 
-DeadLock Offsets Dumber is a lightweight C++ tool for extracting critical game offsets for **DeadLock**. Given the frequent game updates, offsets may change every few hours, and this tool helps you always have the latest values.
+DeadLock Offsets Dumber is a lightweight C++/C# tool for extracting critical game offsets for **DeadLock**. Given the frequent game updates, offsets may change every few hours, and this tool helps you always have the latest values.
 
 > **Note:** This tool is provided for educational purposes only. Use it responsibly and ensure it aligns with any applicable terms of service.
 
