@@ -121,6 +121,7 @@ int main() {
     Signature CCameraManagerSig("48 8D 3D ? ? ? ? 8B D9", 3, 7);
     Signature gameEntitySystemSig("48 8B 1D ? ? ? ? 48 89 1D", 3, 7);
     Signature viewRenderSig("48 89 05 ? ? ? ? 48 8B C8 48 85 C0", 3, 7);
+    Signature GameTraceManageSig("48 8B 0D ? ? ? ? 48 8D 45 ? 48 89 44 24 ? 4C 8D 44 24 ? 4C 8B CF", 3, 7);
 
 
     std::string processName = "project8.exe";
@@ -145,6 +146,8 @@ int main() {
     viewMatrixSig.find(memory, processHandle, reinterpret_cast<uintptr_t>(moduleInfo.lpBaseOfDll));
     std::cout << "dwEntityList:" << std::endl;
     entityListSig.find(memory, processHandle, reinterpret_cast<uintptr_t>(moduleInfo.lpBaseOfDll));
+    std::cout << "dwGameTraceManage:" << std::endl;
+    GameTraceManageSig.find(memory, processHandle, reinterpret_cast<uintptr_t>(moduleInfo.lpBaseOfDll));
     std::cout << "dwViewRender:" << std::endl;
     viewRenderSig.find(memory, processHandle, reinterpret_cast<uintptr_t>(moduleInfo.lpBaseOfDll));
     std::cout << "dwGameEntitySystem:" << std::endl;
