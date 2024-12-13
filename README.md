@@ -1,4 +1,4 @@
-# DeadLock Offsets Dumber 
+# DeadLock Offsets Dumber
  
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![C++](https://img.shields.io/badge/Language-C++-blue)
